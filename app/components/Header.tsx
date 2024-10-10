@@ -15,9 +15,9 @@ const Header: React.FC = () => {
     };
 
     return (
-        <div className="headerback fixed top-0 z-50 w-full">
+        <div className="headerback sticky top-0 z-50 mx-auto">
             {/* Full navbar for larger screens */}
-            <div className="hidden md:flex justify-between mx-auto w-11/12 p-5">
+            <div className="hidden md:flex justify-between mx-auto p-5">
                 <a href="/"><div className='logo absolute'></div></a>
                 <ul className="flex space-x-8 text-white pr-40">
                     <li><Link href="/" className="font-bold p-2 text-white hover:bg-yellow-700 hover:text-black">Home</Link></li>

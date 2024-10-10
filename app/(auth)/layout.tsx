@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
         <div className="p-2 text-center font-bold text-white headerback"><div className="bg-red-950 w-32 font-bold">Login Page</div></div>
         {children}
-        <div className="absolute bottom-0 w-full p-4 text-center text-white headerback"><Link className=' font-bold bg-green-950 p-2 hover:bg-yellow-700 hover:text-black' href={'/'}>HOME PAGE</Link></div>
+        <div className="absolute bottom-0 w-full p-8 text-center text-white headerback"><Link className=' font-bold bg-green-950 p-2 hover:bg-yellow-700 hover:text-black' href={'/'}>HOME PAGE</Link></div>
         {/* <Footer /> */}      
       </body>
     </html>

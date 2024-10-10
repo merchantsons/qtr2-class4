@@ -52,16 +52,16 @@ body {
   
   left: 0;
   width: 100%;
-  height: 92%;
+  height: 83%;
   display: flex;
   justify-content: center;
   align-items: center; /* Center items vertically */
 }
 
 .container {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 80px 20px; /* Responsive padding */
+  /* padding: 80px 20px; Responsive padding */
   text-align: center;
 }
 
