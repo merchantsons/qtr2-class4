@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+
+:root {
+  --prim: #3d705b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  overflow: hidden; /* Prevent scrollbars */
+
+  ::-webkit-input-placeholder { 
+    color: white;
+  }
+  :-moz-placeholder { 
+    color: white;
+  }
+  ::-moz-placeholder { 
+    color: white;
+  }
+  :-ms-input-placeholder { 
+    color: white;
+  }
+}
+
+.logo {
+  content: url('../app/logo.gif');
+  display: inline-block;
+  width: 20vh;
+  margin-top: -5vh;
+  margin-left: -5vh;
+}
+
+
+.wrapper {
+  background: linear-gradient(to bottom right, #50a3a2 0%, var(--prim) 100%);
+  position: absolute;
+  
+  left: 0;
+  width: 100%;
+  height: 92%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px; /* Responsive padding */
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  transition: transform 1s ease-in-out;
+  font-weight: 200;
+}
+
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+
+input {
+  display: block;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%; /* Make input full width */
+  max-width: 250px; /* Limit max width */
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  transition: background-color 0.25s;
+}
+
+input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+input:focus {
+  background-color: white;
+  color: var(--prim);
+}
+
+
+/* Bubbles Styles */
+.bg-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.bg-bubbles li {
+  position: absolute;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: -10px; /* Start below the viewport */
+  animation: rise 5s infinite linear; /* Default animation duration */
+}
+
+
+.headerback{
+  background-color: rgb(30, 61, 51);
+}
+
+/* Keyframes for rising effect with rotation */
+@keyframes rise {
+  0% {
+    transform: translateY(0) rotate(0deg); /* Start at 0 degrees */
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg); /* Rotate 360 degrees while moving up */
+  }
+
+ 
+}
